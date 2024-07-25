@@ -1,9 +1,5 @@
 SpellCorrectorGUI
-SpellCorrectorGUI is a Java-based spell correction application with a graphical user interface (GUI) built using JavaFX. 
-This application allows users to input a word and receive a corrected version based on a predefined dictionary. 
-The project demonstrates the integration of JavaFX for GUI development with traditional Java data structures and algorithms 
-for spell correction.
-
+SpellCorrectorGUI is a JavaFX-based spell correction application that allows users to input a word and receive a corrected version from a predefined dictionary. It uses a Trie data structure for efficient word lookup and incorporates Peter Norvig's spell correction algorithm. This project demonstrates the integration of JavaFX for GUI development with traditional Java data structures and advanced spell correction algorithms.
 Features
 Spell Correction: Provides corrected spelling suggestions for user-input words based on a dictionary.
 Graphical User Interface: Easy-to-use GUI for entering words and displaying corrected suggestions.
