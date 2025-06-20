@@ -1,45 +1,62 @@
-SpellCorrectorGUI
-SpellCorrectorGUI is a JavaFX-based spell correction application that allows users to input a word and receive a corrected version from a predefined dictionary. It uses a Trie data structure for efficient word lookup and incorporates Peter Norvig's and Levenshtein distance's spell correction algorithm. This project demonstrates the integration of JavaFX for GUI development with traditional Java data structures and advanced spell correction algorithms.
 
-Features
-Spell Correction: Provides corrected spelling suggestions for user-input words based on a dictionary.
-Graphical User Interface: Easy-to-use GUI for entering words and displaying corrected suggestions.
-Efficient Data Structure: Uses Trie data structure for fast word lookup and spell correction.
-Project Structure
-SpellCorrector: Handles the logic for correcting misspelled words.
-Trie and TrieNode: Data structures used to store the dictionary and facilitate fast lookup of words.
-SpellCorrectorGUI: Provides the JavaFX-based GUI for user interaction.
-Prerequisites
+SpellCorrectorGUI is a JavaFX-based spell correction application that enables users to input a word and receive corrected suggestions from a predefined dictionary. It combines the power of Trie data structures, Levenshtein distance, and Peter Norvig’s spell correction algorithm to deliver intelligent results in an easy-to-use GUI.
+
+🚀 Features
+🔤 Spell Correction: Suggests the most likely correct spelling for any input word.
+
+🖥️ Graphical User Interface: Intuitive JavaFX interface for entering and correcting words.
+
+⚡ Efficient Lookup: Uses a Trie for fast and memory-efficient dictionary storage and retrieval.
+
+🧠 Advanced Algorithms: Combines Levenshtein distance and Peter Norvig’s approach for robust correction.
+
+📁 Project Structure
+
+project/
+│
+├── javafx-sdk-22.0.2/         # JavaFX SDK
+│   └── lib/                   # JavaFX libraries
+│
+├── src/                       # Source files
+│   ├── SpellCorrector.java        # Core logic for spell correction
+│   ├── SpellCorrectorGUI.java     # JavaFX GUI
+│   ├── Trie.java                  # Trie data structure
+│   └── TrieNode.java              # Trie node representation
+│
+├── bin/                       # Compiled .class files (after compilation)
+└── README.md
+
+⚙️ Prerequisites
 Java 21
 JavaFX SDK 22.0.2
-Setup and Installation
-Download JavaFX SDK:
-Download the JavaFX SDK from Gluon.
 
-Set Up Project:
-Place the JavaFX SDK in your project directory. Ensure the path to the JavaFX SDK is correctly set.
-
-Directory Structure:
-Ensure your project directory is structured as follows:
+✅ HERE IS THE WORKING VIDEO:
 
 
-Install JavaFX Plugin:
-Ensure the JavaFX plugin is installed in Visual Studio Code.
+
+https://github.com/user-attachments/assets/d6a4f6dc-7552-4e85-a164-16e15027858d
 
 
-Usage
-Start the Application:
-Launch the application using the command line or from within Visual Studio Code.
+🛠️ Setup and Installation
+Clone or Download the Repository
+Place the project in your local development directory.
 
-Enter a Word:
-Type a word into the input field.
+Place JavaFX SDK
+Copy the javafx-sdk-22.0.2 folder into the project root.
 
-Correct the Word:
-Click the "Correct" button to see the corrected word displayed.
+Compile the Project
+Run this in PowerShell (from the project directory):
 
-Contributing
-If you would like to contribute to this project, please fork the repository and submit a pull request. Your contributions are greatly appreciated.
+powershell
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+javac --module-path "javafx-sdk-22.0.2\lib" --add-modules javafx.controls -d bin src\*.java
+Run the Application
+Launch the GUI using:
+powershell
+java --module-path "javafx-sdk-22.0.2\lib" --add-modules javafx.controls -cp bin SpellCorrectorGUI
+Using VS Code
+
+Make sure the JavaFX plugin is installed.
+
+Configure launch.json to include the JavaFX VM arguments if running inside the editor.
 
