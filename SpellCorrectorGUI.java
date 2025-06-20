@@ -16,7 +16,7 @@ public class SpellCorrectorGUI extends Application {
     public void start(Stage primaryStage) {
         // Load the dictionary
         Trie dictionary = new Trie();
-        DictionaryLoader.loadDictionary(dictionary, "path/to/dictionary.txt");
+        DictionaryLoader.loadDictionary(dictionary, "C:\\Users\\Dell\\Downloads\\dictionary.txt");
         spellCorrector = new SpellCorrector(dictionary);
 
         // Create UI components
